@@ -2,6 +2,7 @@ package net.tomatosoupter.archery_and_blades.registries;
 
 import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.minecraft.Util;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -30,7 +31,7 @@ public class ArmorMaterialRegistry {
                 attribute.put(ArmorItem.Type.LEGGINGS, 0);
                 attribute.put(ArmorItem.Type.BOOTS, 0);
                 attribute.put(ArmorItem.Type.BODY, 5);
-            }), 15, 0, 0, () -> Items.LEATHER);
+            }), 15, 0, SoundEvents.ARMOR_EQUIP_LEATHER, 0, () -> Items.LEATHER);
 
     //PALADIN ARMOR TIER
     public static final Holder<ArmorMaterial> PALADIN_ARMOR = register("paladin_armor",
@@ -40,14 +41,13 @@ public class ArmorMaterialRegistry {
                 attribute.put(ArmorItem.Type.LEGGINGS, 0);
                 attribute.put(ArmorItem.Type.BOOTS, 0);
                 attribute.put(ArmorItem.Type.BODY, 5);
-            }), 15, 0, 0, () -> ItemRegistry.DIVINE_PEARL.get());
+            }), 15, 0, SoundEvents.ARMOR_EQUIP_DIAMOND, 0, () -> ItemRegistry.DIVINE_PEARL.get());
 
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
-                                                  int enchantability,float toughness, float knockbackResistance,
+                                                  int enchantability, float toughness, Holder<SoundEvent> equipSound, float knockbackResistance,
                                                   Supplier<Item> ingredientItem) {
         ResourceLocation location = ResourceLocation.fromNamespaceAndPath(ArcheryAndBlades.MODID, name);
-        Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_NETHERITE;
         Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
         List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
 

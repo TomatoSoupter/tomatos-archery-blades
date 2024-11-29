@@ -1,5 +1,6 @@
 package net.tomatosoupter.archery_and_blades;
 
+import net.tomatosoupter.archery_and_blades.registries.CreativeTabRegistry;
 import net.tomatosoupter.archery_and_blades.registries.ItemRegistry;
 import org.slf4j.Logger;
 
@@ -30,6 +31,7 @@ public class ArcheryAndBlades
         NeoForge.EVENT_BUS.register(this);
 
         ItemRegistry.register(modEventBus);
+        CreativeTabRegistry.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
