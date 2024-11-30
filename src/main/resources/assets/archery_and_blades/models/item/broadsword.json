@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "archery_and_blades:item/large_tool_template",
+    "textures": {
+      "layer0": "archery_and_blades:item/broadsword"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/handheld",
+      "textures": {
+        "layer0": "archery_and_blades:item/broadsword_gui"
+      }
+    }
+  }
+}

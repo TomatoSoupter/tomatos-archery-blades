@@ -2,5 +2,12 @@
   "item.archery_and_blades.archer_helmet": "Archer Helmet",
   "item.archery_and_blades.archer_chestplate": "Archer Chestplate",
 
+  "item.archery_and_blades.paladin_helmet": "Paladin Helmet",
+  "item.archery_and_blades.paladin_chestplate": "Paladin Chestplate",
+  "item.archery_and_blades.paladin_leggings": "Paladin Leggings",
+  "item.archery_and_blades.paladin_boots": "Paladin Boots",
+
+  "item.archery_and_blades.broadsword": "Broadsword",
+
   "tab.archery_and_blades.main": "Archery and Blades"
 }

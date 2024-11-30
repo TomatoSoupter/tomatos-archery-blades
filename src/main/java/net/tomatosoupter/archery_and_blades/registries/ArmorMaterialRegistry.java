@@ -30,18 +30,16 @@ public class ArmorMaterialRegistry {
                 attribute.put(ArmorItem.Type.CHESTPLATE, 5);
                 attribute.put(ArmorItem.Type.LEGGINGS, 0);
                 attribute.put(ArmorItem.Type.BOOTS, 0);
-                attribute.put(ArmorItem.Type.BODY, 5);
             }), 15, 0, SoundEvents.ARMOR_EQUIP_LEATHER, 0, () -> Items.LEATHER);
 
     //PALADIN ARMOR TIER
     public static final Holder<ArmorMaterial> PALADIN_ARMOR = register("paladin_armor",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.HELMET, 2);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 5);
-                attribute.put(ArmorItem.Type.LEGGINGS, 0);
-                attribute.put(ArmorItem.Type.BOOTS, 0);
-                attribute.put(ArmorItem.Type.BODY, 5);
-            }), 15, 0, SoundEvents.ARMOR_EQUIP_DIAMOND, 0, () -> ItemRegistry.DIVINE_PEARL.get());
+                attribute.put(ArmorItem.Type.HELMET, 3);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+            }), 15, 2, SoundEvents.ARMOR_EQUIP_DIAMOND, 0, () -> ItemRegistry.DIVINE_PEARL.get());
 
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,

@@ -20,6 +20,12 @@ public class CreativeTabRegistry {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ItemRegistry.ARCHER_HELMET.get());
                         output.accept(ItemRegistry.ARCHER_CHESTPLATE.get());
+
+                        output.accept(ItemRegistry.PALADIN_HELMET.get());
+                        output.accept(ItemRegistry.PALADIN_CHESTPLATE.get());
+                        output.accept(ItemRegistry.PALADIN_LEGGINGS.get());
+                        output.accept(ItemRegistry.PALADIN_BOOTS.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
