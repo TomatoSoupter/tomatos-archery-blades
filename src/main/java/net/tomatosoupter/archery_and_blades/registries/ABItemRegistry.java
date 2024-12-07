@@ -1,20 +1,17 @@
 package net.tomatosoupter.archery_and_blades.registries;
 
-import io.redspace.ironsspellbooks.item.consumables.SimpleElixir;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tomatosoupter.archery_and_blades.ArcheryAndBlades;
-import net.tomatosoupter.archery_and_blades.item.ExtendedElixir;
+import net.tomatosoupter.archery_and_blades.item.consumables.ExtendedElixir;
 import net.tomatosoupter.archery_and_blades.item.armor.*;
 
-public class ItemRegistry {
+public class ABItemRegistry {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ArcheryAndBlades.MODID);
 
     //Armors
@@ -50,7 +47,7 @@ public class ItemRegistry {
     public static final DeferredItem<SwordItem> RAPIER = ITEMS.register("rapier", () -> new SwordItem(Tiers.IRON, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.IRON, 3, -1.3f))));
 
     //Elixirs
-    public static final DeferredItem<Item> EMPOWERMENT_ELIXIR = ITEMS.register("empowerment_elixir", () -> new ExtendedElixir(new Item.Properties(), () -> new MobEffectInstance(MobEffectRegistry.CHARGED, 1200, 1), () -> new MobEffectInstance(MobEffectRegistry.HASTENED, 1200, 4)));
+    public static final DeferredItem<Item> EMPOWERMENT_ELIXIR = ITEMS.register("empowerment_elixir", () -> new ExtendedElixir(ItemPropertiesHelper.material(4), () -> new MobEffectInstance(MobEffectRegistry.CHARGED, 1200, 1), () -> new MobEffectInstance(MobEffectRegistry.HASTENED, 1200, 4)));
 
     //Generic Items
     public static final DeferredItem<Item> BOUND_LEATHER = ITEMS.register("bound_leather", () -> new Item(ItemPropertiesHelper.material()));

@@ -1,10 +1,9 @@
-package net.tomatosoupter.archery_and_blades.item;
+package net.tomatosoupter.archery_and_blades.item.consumables;
 
 import io.redspace.ironsspellbooks.item.consumables.DrinkableItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.Items;
 
-import java.util.List;
 import java.util.function.Supplier;
 
 public class ExtendedElixir extends DrinkableItem {

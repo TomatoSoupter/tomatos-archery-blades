@@ -15,41 +15,41 @@ public class CreativeTabRegistry {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ArcheryAndBlades.MODID);
 
     public static final Supplier<CreativeModeTab> ARCHERY_AND_BLADES = CREATIVE_MODE_TAB.register("archery_and_blades",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ItemRegistry.ARCHER_HELMET.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ABItemRegistry.ARCHER_HELMET.get()))
                     .title(Component.translatable("tab.archery_and_blades.main"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ItemRegistry.ARCHER_HELMET.get());
-                        output.accept(ItemRegistry.ARCHER_CHESTPLATE.get());
-                        output.accept(ItemRegistry.ARCHER_LEGGINGS.get());
-                        output.accept(ItemRegistry.ARCHER_BOOTS.get());
+                        output.accept(ABItemRegistry.ARCHER_HELMET.get());
+                        output.accept(ABItemRegistry.ARCHER_CHESTPLATE.get());
+                        output.accept(ABItemRegistry.ARCHER_LEGGINGS.get());
+                        output.accept(ABItemRegistry.ARCHER_BOOTS.get());
 
-                        output.accept(ItemRegistry.REINFORCED_HELMET.get());
-                        output.accept(ItemRegistry.REINFORCED_CHESTPLATE.get());
-                        output.accept(ItemRegistry.REINFORCED_LEGGINGS.get());
-                        output.accept(ItemRegistry.REINFORCED_BOOTS.get());
+                        output.accept(ABItemRegistry.REINFORCED_HELMET.get());
+                        output.accept(ABItemRegistry.REINFORCED_CHESTPLATE.get());
+                        output.accept(ABItemRegistry.REINFORCED_LEGGINGS.get());
+                        output.accept(ABItemRegistry.REINFORCED_BOOTS.get());
 
-                        output.accept(ItemRegistry.KNIGHT_HELMET.get());
-                        output.accept(ItemRegistry.KNIGHT_CHESTPLATE.get());
-                        output.accept(ItemRegistry.KNIGHT_LEGGINGS.get());
-                        output.accept(ItemRegistry.KNIGHT_BOOTS.get());
+                        output.accept(ABItemRegistry.KNIGHT_HELMET.get());
+                        output.accept(ABItemRegistry.KNIGHT_CHESTPLATE.get());
+                        output.accept(ABItemRegistry.KNIGHT_LEGGINGS.get());
+                        output.accept(ABItemRegistry.KNIGHT_BOOTS.get());
 
-                        output.accept(ItemRegistry.PALADIN_HELMET.get());
-                        output.accept(ItemRegistry.PALADIN_CHESTPLATE.get());
-                        output.accept(ItemRegistry.PALADIN_LEGGINGS.get());
-                        output.accept(ItemRegistry.PALADIN_BOOTS.get());
+                        output.accept(ABItemRegistry.PALADIN_HELMET.get());
+                        output.accept(ABItemRegistry.PALADIN_CHESTPLATE.get());
+                        output.accept(ABItemRegistry.PALADIN_LEGGINGS.get());
+                        output.accept(ABItemRegistry.PALADIN_BOOTS.get());
 
-                        output.accept(ItemRegistry.THIEF_HELMET.get());
-                        output.accept(ItemRegistry.THIEF_CHESTPLATE.get());
-                        output.accept(ItemRegistry.THIEF_LEGGINGS.get());
-                        output.accept(ItemRegistry.THIEF_BOOTS.get());
+                        output.accept(ABItemRegistry.THIEF_HELMET.get());
+                        output.accept(ABItemRegistry.THIEF_CHESTPLATE.get());
+                        output.accept(ABItemRegistry.THIEF_LEGGINGS.get());
+                        output.accept(ABItemRegistry.THIEF_BOOTS.get());
 
-                        output.accept(ItemRegistry.BROADSWORD.get());
-                        output.accept(ItemRegistry.RAPIER.get());
+                        output.accept(ABItemRegistry.BROADSWORD.get());
+                        output.accept(ABItemRegistry.RAPIER.get());
 
-                        output.accept(ItemRegistry.BOUND_LEATHER.get());
-                        output.accept(ItemRegistry.TOUGHENED_LEATHER.get());
+                        output.accept(ABItemRegistry.BOUND_LEATHER.get());
+                        output.accept(ABItemRegistry.TOUGHENED_LEATHER.get());
 
-                        output.accept(ItemRegistry.EMPOWERMENT_ELIXIR.get());
+                        output.accept(ABItemRegistry.EMPOWERMENT_ELIXIR.get());
 
                     }).build());
 

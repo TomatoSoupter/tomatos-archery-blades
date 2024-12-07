@@ -1,8 +1,9 @@
 package net.tomatosoupter.archery_and_blades;
 
 import net.minecraft.resources.ResourceLocation;
+import net.tomatosoupter.archery_and_blades.item.consumables.ManaSicknessEvent;
 import net.tomatosoupter.archery_and_blades.registries.CreativeTabRegistry;
-import net.tomatosoupter.archery_and_blades.registries.ItemRegistry;
+import net.tomatosoupter.archery_and_blades.registries.ABItemRegistry;
 import net.tomatosoupter.archery_and_blades.registries.MobEffectRegistry;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -33,9 +34,11 @@ public class ArcheryAndBlades
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
-        ItemRegistry.register(modEventBus);
+        ABItemRegistry.register(modEventBus);
         CreativeTabRegistry.register(modEventBus);
         MobEffectRegistry.register(modEventBus);
+
+
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
