@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "archery_and_blades:paladin_boots"
+    "archery_and_blades:paladin_boots",
+    "archery_and_blades:thief_boots",
+    "archery_and_blades:knight_boots"
   ]
 }

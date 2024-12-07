@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.DefaultedItemGeoModel;
 public class ArcherArmorModel extends DefaultedItemGeoModel<ArcherArmorItem> {
 
     public ArcherArmorModel() {
-        super(ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, ""));
+        super(ResourceLocation.fromNamespaceAndPath(ArcheryAndBlades.MODID, ""));
     }
 
     @Override
@@ -24,6 +24,6 @@ public class ArcherArmorModel extends DefaultedItemGeoModel<ArcherArmorItem> {
 
     @Override
     public ResourceLocation getAnimationResource(ArcherArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(ArcheryAndBlades.MODID, "animations/wizard_armor_animation.json");
+        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.json");
     }
 }

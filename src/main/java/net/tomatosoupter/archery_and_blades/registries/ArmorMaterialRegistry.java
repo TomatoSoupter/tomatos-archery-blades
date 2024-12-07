@@ -32,6 +32,15 @@ public class ArmorMaterialRegistry {
                 attribute.put(ArmorItem.Type.BOOTS, 0);
             }), 15, 0, SoundEvents.ARMOR_EQUIP_LEATHER, 0, () -> Items.LEATHER);
 
+    //REINFORCED LEATHER ARMOR TIER
+    public static final Holder<ArmorMaterial> REINFORCED_LEATHER_ARMOR = register("reinforced_leather",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.HELMET, 2);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 5);
+                attribute.put(ArmorItem.Type.LEGGINGS, 3);
+                attribute.put(ArmorItem.Type.BOOTS, 1);
+            }), 15, 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0, () -> Items.LEATHER);
+
     //PALADIN ARMOR TIER
     public static final Holder<ArmorMaterial> PALADIN_ARMOR = register("paladin_armor",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
@@ -39,8 +48,25 @@ public class ArmorMaterialRegistry {
                 attribute.put(ArmorItem.Type.CHESTPLATE, 8);
                 attribute.put(ArmorItem.Type.LEGGINGS, 6);
                 attribute.put(ArmorItem.Type.BOOTS, 3);
-            }), 15, 2, SoundEvents.ARMOR_EQUIP_DIAMOND, 0, () -> ItemRegistry.DIVINE_PEARL.get());
+            }), 10, 2, SoundEvents.ARMOR_EQUIP_NETHERITE, 0, () -> ItemRegistry.DIVINE_PEARL.get());
 
+    //THIEF ARMOR TIER
+    public static final Holder<ArmorMaterial> THIEF_ARMOR = register("thief_armor",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.HELMET, 3);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+            }), 10, 0, SoundEvents.ARMOR_EQUIP_LEATHER, 0, () -> Items.LEATHER);
+
+    //KNIGHT ARMOR TIER
+    public static final Holder<ArmorMaterial> KNIGHT_ARMOR = register("knight_armor",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.HELMET, 3);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+            }), 9, 1, SoundEvents.ARMOR_EQUIP_IRON, 1, () -> Items.IRON_INGOT);
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, Holder<SoundEvent> equipSound, float knockbackResistance,

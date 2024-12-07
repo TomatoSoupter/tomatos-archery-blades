@@ -1,7 +1,10 @@
 package net.tomatosoupter.archery_and_blades;
 
+import net.minecraft.resources.ResourceLocation;
 import net.tomatosoupter.archery_and_blades.registries.CreativeTabRegistry;
 import net.tomatosoupter.archery_and_blades.registries.ItemRegistry;
+import net.tomatosoupter.archery_and_blades.registries.MobEffectRegistry;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -32,6 +35,7 @@ public class ArcheryAndBlades
 
         ItemRegistry.register(modEventBus);
         CreativeTabRegistry.register(modEventBus);
+        MobEffectRegistry.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -45,5 +49,9 @@ public class ArcheryAndBlades
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {}
+    }
+
+    public static ResourceLocation id(@NotNull String path) {
+        return ResourceLocation.fromNamespaceAndPath(ArcheryAndBlades.MODID, path);
     }
 }

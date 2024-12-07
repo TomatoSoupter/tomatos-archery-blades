@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "archery_and_blades:archer_helmet",
-    "archery_and_blades:paladin_helmet"
+    "archery_and_blades:paladin_helmet",
+    "archery_and_blades:thief_helmet",
+    "archery_and_blades:knight_helmet"
   ]
 }

@@ -20,11 +20,36 @@ public class CreativeTabRegistry {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ItemRegistry.ARCHER_HELMET.get());
                         output.accept(ItemRegistry.ARCHER_CHESTPLATE.get());
+                        output.accept(ItemRegistry.ARCHER_LEGGINGS.get());
+                        output.accept(ItemRegistry.ARCHER_BOOTS.get());
+
+                        output.accept(ItemRegistry.REINFORCED_HELMET.get());
+                        output.accept(ItemRegistry.REINFORCED_CHESTPLATE.get());
+                        output.accept(ItemRegistry.REINFORCED_LEGGINGS.get());
+                        output.accept(ItemRegistry.REINFORCED_BOOTS.get());
+
+                        output.accept(ItemRegistry.KNIGHT_HELMET.get());
+                        output.accept(ItemRegistry.KNIGHT_CHESTPLATE.get());
+                        output.accept(ItemRegistry.KNIGHT_LEGGINGS.get());
+                        output.accept(ItemRegistry.KNIGHT_BOOTS.get());
 
                         output.accept(ItemRegistry.PALADIN_HELMET.get());
                         output.accept(ItemRegistry.PALADIN_CHESTPLATE.get());
                         output.accept(ItemRegistry.PALADIN_LEGGINGS.get());
                         output.accept(ItemRegistry.PALADIN_BOOTS.get());
+
+                        output.accept(ItemRegistry.THIEF_HELMET.get());
+                        output.accept(ItemRegistry.THIEF_CHESTPLATE.get());
+                        output.accept(ItemRegistry.THIEF_LEGGINGS.get());
+                        output.accept(ItemRegistry.THIEF_BOOTS.get());
+
+                        output.accept(ItemRegistry.BROADSWORD.get());
+                        output.accept(ItemRegistry.RAPIER.get());
+
+                        output.accept(ItemRegistry.BOUND_LEATHER.get());
+                        output.accept(ItemRegistry.TOUGHENED_LEATHER.get());
+
+                        output.accept(ItemRegistry.EMPOWERMENT_ELIXIR.get());
 
                     }).build());
 

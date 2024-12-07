@@ -1,13 +1,37 @@
 {
   "item.archery_and_blades.archer_helmet": "Archer Helmet",
   "item.archery_and_blades.archer_chestplate": "Archer Chestplate",
+  "item.archery_and_blades.archer_leggings": "Archer Leggings",
+  "item.archery_and_blades.archer_boots": "Archer Boots",
+
+  "item.archery_and_blades.reinforced_helmet": "Reinforced Helmet",
+  "item.archery_and_blades.reinforced_chestplate": "Reinforced Chestplate",
+  "item.archery_and_blades.reinforced_leggings": "Reinforced Leggings",
+  "item.archery_and_blades.reinforced_boots": "Reinforced Boots",
 
   "item.archery_and_blades.paladin_helmet": "Paladin Helmet",
   "item.archery_and_blades.paladin_chestplate": "Paladin Chestplate",
   "item.archery_and_blades.paladin_leggings": "Paladin Leggings",
   "item.archery_and_blades.paladin_boots": "Paladin Boots",
 
+  "item.archery_and_blades.thief_helmet": "Thief Hood",
+  "item.archery_and_blades.thief_chestplate": "Thief Tunic",
+  "item.archery_and_blades.thief_leggings": "Thief Pants",
+  "item.archery_and_blades.thief_boots": "Thief Boots",
+
+  "item.archery_and_blades.knight_helmet": "Knight Helmet",
+  "item.archery_and_blades.knight_chestplate": "Knight Chestplate",
+  "item.archery_and_blades.knight_leggings": "Knight Leggings",
+  "item.archery_and_blades.knight_boots": "Knight Boots",
+
   "item.archery_and_blades.broadsword": "Broadsword",
+  "item.archery_and_blades.rapier": "Rapier",
+
+  "item.archery_and_blades.empowerment_elixir": "Elixir of Empowerment",
+  "item.archery_and_blades.empowerment_elixir.desc": "",
+
+  "effect.archery_and_blades.mana_sickness": "Mana Sickness",
+
 
   "tab.archery_and_blades.main": "Archery and Blades"
 }

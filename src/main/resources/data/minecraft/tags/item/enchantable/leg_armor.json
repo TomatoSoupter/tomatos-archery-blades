@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "archery_and_blades:paladin_leggings"
+    "archery_and_blades:paladin_leggings",
+    "archery_and_blades:thief_leggings",
+    "archery_and_blades:knight_leggings"
   ]
 }
